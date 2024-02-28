@@ -47,7 +47,7 @@ mcnemar.test(x = mn_data$Pre, y = mn_data$Post, correct = FALSE)
 # Presentation using gtsummary package
 library(gtsummary)
 
-# Independent t test
+# McNemar's test
 mn_data %>%
   mutate(
     Pre = case_when(Pre == "low_self_esteem" ~ "Low self-esteem",
